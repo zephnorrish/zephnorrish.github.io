@@ -4,3 +4,8 @@
 
 layout: home
 ---
+
+## Welcome to the Wonderful Kingdom of Lanna
+### where dreams are made true
+
+This is some content
