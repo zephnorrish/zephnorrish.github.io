@@ -12,6 +12,7 @@ gem "jekyll", "~> 4.4"
 # Happy Jekylling!
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "jekyll-theme-ethereal"
+
 # gem "minima", "~> 2.5"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
