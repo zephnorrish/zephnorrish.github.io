@@ -1,0 +1,42 @@
+---
+---
+{%- assign lang = page.lang | default: site.lang | default: 'en' -%}
+{%- assign title = page.title | default: site.title -%}
+{%- assign subtitle = page.subtitle | default: site.subtitle -%}
+{%- assign description = page.description | default: site.description -%}
+{%- assign stylesheets = page.stylesheets | default: site.stylesheets -%}
+{%- assign scripts = page.scripts | default: site.scripts -%}
+<!DOCTYPE html>
+<!--
+    Ethereal by HTML5 UP
+    html5up.net | @ajlkn
+    Ported into a Jekyll template by apehex
+    https://apehex.github.io | @apehex
+    Free for personal and commercial use under the CCA 4.0 license
+-->
+<html lang="{{ lang }}">
+    
+    {% include head.html title=title subtitle=subtitle description=description stylesheets=stylesheets %}
+
+    <body class="is-preload">
+
+        {% include language.html %}
+
+        <!-- Page Wrapper -->
+        <div id="page-wrapper">
+
+            <!-- Wrapper -->
+            <div id="wrapper">
+
+                {{ content }}
+
+            </div>
+
+        </div>
+
+        {% include footer.html %}
+
+        {% include scripts.html scripts=scripts %}
+
+    </body>
+</html>
